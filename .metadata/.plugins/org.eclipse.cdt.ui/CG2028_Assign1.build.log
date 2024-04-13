@@ -1,0 +1,16 @@
+23:52:02 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Documents\CG2028_ARM_Project\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17500	    480	  50912	  68892	  10d1c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+
+23:52:03 Build Finished. 0 errors, 0 warnings. (took 431ms)
+

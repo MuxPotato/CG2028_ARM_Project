@@ -1,0 +1,10 @@
+02:20:56 **** Incremental Build of configuration Debug for project asm_basic ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o" "../Src/main.s"
+../Src/main.s: Assembler messages:
+../Src/main.s:36: Error: bad instruction `loop STR R0,[R2]'
+make: *** [Src/subdir.mk:19: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+02:20:56 Build Failed. 2 errors, 0 warnings. (took 246ms)
+

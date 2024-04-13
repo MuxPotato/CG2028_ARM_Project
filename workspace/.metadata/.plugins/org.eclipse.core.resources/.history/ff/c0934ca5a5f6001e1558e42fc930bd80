@@ -1,0 +1,126 @@
+/*
+ * convolve.s
+ *
+ *  Created on: 29/01/2023
+ *      Author: Hou Linxin
+ */
+   .syntax unified
+	.cpu cortex-m4
+	.fpu softvfp
+	.thumb
+
+		.global convolve
+
+@ Start of executable code
+.section .text
+
+@ CG2028 Assignment 1, Sem 2, AY 2023/24
+@ (c) ECE NUS, 2024
+
+@ Write Student 1’s Name here:
+@ Write Student 2’s Name here:
+
+@ You could create a look-up table of registers here:
+
+@ R0 ...
+@ R1 ...
+
+
+@ Start of program. Check if this is correct for potential bug
+@ R0 holds pointer to start address to signal array
+@ R1 holds pointer to start address to kernel array
+@ R2 holds M, signal size
+@ R3 holds N, kernel size
+
+
+@ registers used, 0,1,2,3,4,5,6,7,8
+
+@ write your program from here:
+convolve:
+	MOV R5,R2
+	MOV R6,#4
+	MUL R6,R6,R3
+	ADD R5,R5,R6 @ Here we are getting address of the last element of the kernel array. And starting from there to do our dot product
+
+
+
+	@ Outer loop: Loops from 1 to M (signal size). R7 holds counter i. R2 holds M
+	MOV R7,#1
+	OUTER_LOOP:
+		MOV R10, #4
+		MUL R10, R7, R10 @ The offset needed to get address of i-th element in signal. 4 * R7 -> 4 * i
+		@ R10 holds the address of the i-th element we are on before the inner loop
+		ADD R10, R1, R10
+		@LDR R10, [R7, R10]! @potential bug syntax maybe need {}, i forgot what this is for
+
+		@ Inner loop: Loops from 1 to N (kernel size).
+		@ R8 holds counter j. R4 holds N
+		@ j is going to loop from i down to i - N + 1.
+		@ R11 stores i - N + 1 to check at end of loop
+		SUB R11, R7,R3
+		SUB R11,R11,#1
+		MOV R8, R7
+
+		@ R4 holds the current address that we are on for the kernel. R5 always holds the original flipped version
+		MOV R4,R5
+
+
+		INNER_LOOP:
+		@ Two checks are required, for 1 <= j <= N. To keep j in bound.
+		@ Here we branch only if condition is violated to skip the multipiation
+		CMP R8,#1  @ Check 1: j < 1
+		BLT skip
+		CMP R8,R3
+		BGT skip   @ Check 2: j > N
+
+
+		@ key assumption, the kernel last element is aligned with the i-th element in the signal, where we count down to the first element of the kernel (see diagram)
+
+
+
+		LDR R12, [R10], #-4 @ post indexing, -4, R10 is address of signal element we are on
+		LDR R6, [R4], #-4 @ R is address of current address that we are on for the kernel.
+		MUL R9, R12, R6
+		STR R9, [R0], #4 @ post indexing +4, we going forward -> POTENTIAL BUG
+		@ I assumed that R0 is the address that is being returned, so we write the answer we have to R0
+		skip:
+
+
+
+		@ End of Inner Loop.
+		SUB R8, R8, #1
+		CMP R8, R11
+		BGE INNER_LOOP @ j >= i - N + 1 to continue
+
+
+
+	@ End of Outer Loop
+	ADDS R7,R7,#1
+	CMP R7, R2
+	BLS OUTER_LOOP
+
+
+
+
+
+
+	@ main.c -> ASM -> subrountine
+	@ As LR can only store one return address
+	@ We are pushing R14, the return address for us to go back from ASM to main.c
+	@ Into stack first, before going into the subrountine and replacing LR with
+	@ the return address to the ASM main function.
+	@ R14 is the LR -> Link Register
+	@ So if we want to add more subrountines here, always preserve the return address
+	@ (that is in R14), into the stack before going into that subrountine.
+	@ R0-R3, R12 do not need to be PUSH and POP. bcs they are caller-saved
+	@ R4-R11, R14 ARE NOT, u need to PUSH and POP. bcs they are callee-saved
+	PUSH {R14}
+
+	BL SUBROUTINE
+
+	POP {R14}
+	BX LR
+
+SUBROUTINE:
+
+	BX LR

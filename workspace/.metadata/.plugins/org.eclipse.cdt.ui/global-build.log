@@ -1,0 +1,1784 @@
+09:50:28 **** Incremental Build of configuration Debug for project blink_plain_C ****
+make -j16 all 
+arm-none-eabi-size   blink_plain_C.elf 
+   text	   data	    bss	    dec	    hex	filename
+    824	     16	   1568	   2408	    968	blink_plain_C.elf
+Finished building: default.size.stdout
+ 
+09:50:34 **** Incremental Build of configuration Debug for project blink_plain_C ****
+make -j16 all 
+arm-none-eabi-size   blink_plain_C.elf 
+   text	   data	    bss	    dec	    hex	filename
+    824	     16	   1568	   2408	    968	blink_plain_C.elf
+Finished building: default.size.stdout
+ 
+09:56:29 **** Incremental Build of configuration Debug for project asm_basic ****
+make -j16 all 
+arm-none-eabi-size   asm_basic.elf 
+   text	   data	    bss	    dec	    hex	filename
+    680	     16	   1568	   2264	    8d8	asm_basic.elf
+Finished building: default.size.stdout
+ 
+09:56:58 **** Incremental Build of configuration Debug for project asm_basic ****
+make -j16 all 
+arm-none-eabi-size   asm_basic.elf 
+   text	   data	    bss	    dec	    hex	filename
+    680	     16	   1568	   2264	    8d8	asm_basic.elf
+Finished building: default.size.stdout
+ 
+09:30:57 **** Clean-only build of configuration Debug for project CG2028_Assign1 ****
+make -j16 clean 
+rm -rf ./Startup/startup_stm32l475vgtx.d ./Startup/startup_stm32l475vgtx.o
+rm -rf ./Src/convolve.d ./Src/convolve.o ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+rm -rf CG2028_Assign1.elf CG2028_Assign1.list CG2028_Assign1.map default.size.stdout
+ 
+09:30:58 **** Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32l475vgtx.d" -MT"Startup/startup_stm32l475vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32l475vgtx.o" "../Startup/startup_stm32l475vgtx.s"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17308	    480	   1760	  19548	   4c5c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+09:33:40 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17308	    480	   1760	  19548	   4c5c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+09:35:20 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17308	    480	   1760	  19548	   4c5c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+09:36:05 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17308	    480	   1760	  19548	   4c5c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+09:36:49 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17308	    480	   1760	  19548	   4c5c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+09:37:16 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17308	    480	   1760	  19548	   4c5c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+09:37:55 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17308	    480	   1760	  19548	   4c5c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+09:38:12 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17308	    480	   1760	  19548	   4c5c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+09:39:21 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17308	    480	   1760	  19548	   4c5c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+09:42:59 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17308	    480	   1760	  19548	   4c5c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+10:02:35 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17308	    480	   1760	  19548	   4c5c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+22:04:29 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17308	    480	   1760	  19548	   4c5c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+22:04:33 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17308	    480	   1760	  19548	   4c5c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+02:16:06 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+../Src/convolve.s: Assembler messages:
+../Src/convolve.s:50: Error: bad instruction `loop'
+../Src/convolve.s:52: Error: ARM register expected -- `mul R10,R7,#4'
+../Src/convolve.s:53: Error: Thumb does not support register indexing with writeback -- `ldr R10,[R7,R10]!'
+../Src/convolve.s:67: Error: bad instruction `loop'
+make: *** [Src/subdir.mk:29: Src/convolve.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+02:18:00 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+../Src/convolve.s: Assembler messages:
+../Src/convolve.s:50: Error: bad instruction `loop MUL R10,R7,#4'
+../Src/convolve.s:51: Error: Thumb does not support register indexing with writeback -- `ldr R10,[R7,R10]!'
+../Src/convolve.s:65: Error: bad instruction `loop CMP R8,#1'
+make: *** [Src/subdir.mk:29: Src/convolve.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+02:20:10 **** Build of configuration Debug for project asm_basic ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o" "../Src/main.s"
+../Src/main.s: Assembler messages:
+../Src/main.s:31: Error: symbol `main' is already defined
+../Src/main.s:36: Error: bad instruction `loop STR R0,[R2]'
+make: *** [Src/subdir.mk:19: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+02:20:29 **** Incremental Build of configuration Debug for project asm_basic ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o" "../Src/main.s"
+../Src/main.s: Assembler messages:
+../Src/main.s:31: Error: symbol `main' is already defined
+../Src/main.s:36: Error: bad instruction `loop STR R0,[R2]'
+make: *** [Src/subdir.mk:19: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+02:20:56 **** Incremental Build of configuration Debug for project asm_basic ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o" "../Src/main.s"
+../Src/main.s: Assembler messages:
+../Src/main.s:36: Error: bad instruction `loop STR R0,[R2]'
+make: *** [Src/subdir.mk:19: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+02:27:00 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+../Src/convolve.s: Assembler messages:
+../Src/convolve.s:51: Error: ARM register expected -- `mul R10,R7,#4'
+make: *** [Src/subdir.mk:29: Src/convolve.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+02:27:27 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+02:27:44 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+02:27:45 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+02:29:20 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+02:30:05 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+02:31:12 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+02:31:16 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+02:31:24 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+02:33:09 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+02:36:34 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+02:59:39 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+03:00:12 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+03:05:00 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+03:07:29 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+03:07:34 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+03:08:07 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+03:16:22 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+../Src/convolve.s: Assembler messages:
+../Src/convolve.s:87: Error: ARM register expected -- `str R9,[ans],#4'
+make: *** [Src/subdir.mk:29: Src/convolve.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+03:17:24 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+03:21:26 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+03:21:54 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+03:21:56 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+03:22:26 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+03:22:27 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+03:30:35 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+03:32:36 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+03:32:43 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+03:35:10 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+03:36:08 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+03:36:10 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+03:36:13 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+03:36:28 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+03:58:28 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+04:00:08 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+04:01:46 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+04:01:51 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+04:08:38 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+04:08:46 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+04:16:07 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+04:16:58 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+04:17:03 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+13:29:47 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+13:32:40 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+13:32:44 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+13:33:01 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+13:33:13 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+13:33:32 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+13:35:03 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+13:45:45 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:80:2: error: stray '@' in program
+   80 |  @//int x[N] = { 1, 1, 1, 1, 1 }; //kernel array
+      |  ^
+make: *** [Src/subdir.mk:31: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:46:01 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17396	    480	   1760	  19636	   4cb4	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+19:09:08 **** Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17412	    480	   1760	  19652	   4cc4	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+19:10:46 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17412	    480	   1760	  19652	   4cc4	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+19:11:31 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17412	    480	   1760	  19652	   4cc4	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+19:13:57 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+19:14:52 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+19:15:05 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+19:18:47 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+19:19:16 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+19:21:18 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+19:21:41 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+19:56:03 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17404	    480	   1760	  19644	   4cbc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+19:56:08 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17404	    480	   1760	  19644	   4cbc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+19:57:16 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17404	    480	   1760	  19644	   4cbc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+20:00:52 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17404	    480	   1760	  19644	   4cbc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+20:02:32 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17404	    480	   1760	  19644	   4cbc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+20:02:44 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17404	    480	   1760	  19644	   4cbc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+20:04:03 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17404	    480	   1760	  19644	   4cbc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+20:04:51 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17404	    480	   1760	  19644	   4cbc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+20:04:54 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17404	    480	   1760	  19644	   4cbc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+20:05:15 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17404	    480	   1760	  19644	   4cbc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+20:05:18 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17404	    480	   1760	  19644	   4cbc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+20:13:43 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17404	    480	   1760	  19644	   4cbc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+20:15:19 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+20:23:35 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+20:27:00 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+20:27:13 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+20:29:00 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+20:29:04 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+20:31:22 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+20:35:12 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+20:41:17 **** Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+21:00:22 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+21:00:27 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+21:01:38 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+21:02:00 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+21:02:02 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+21:33:43 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+21:36:04 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+21:36:14 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17388	    480	   1760	  19628	   4cac	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+22:53:01 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17452	    480	   1760	  19692	   4cec	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+00:36:21 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17452	    480	   1760	  19692	   4cec	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+00:41:41 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17452	    480	   1760	  19692	   4cec	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+00:44:09 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17452	    480	   1760	  19692	   4cec	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+02:01:46 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17340	    480	   1760	  19580	   4c7c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+13:05:58 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17468	    480	   2784	  20732	   50fc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+13:07:25 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17468	    480	   2784	  20732	   50fc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+13:09:11 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17468	    480	   2784	  20732	   50fc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+13:09:21 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17468	    480	   2784	  20732	   50fc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+13:09:34 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17468	    480	   2784	  20732	   50fc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+13:11:11 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17468	    480	   2784	  20732	   50fc	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+13:12:20 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17484	    480	   2784	  20748	   510c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+13:13:25 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17484	    480	   2784	  20748	   510c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+13:13:29 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17484	    480	   2784	  20748	   510c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+13:18:32 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17484	    480	   2784	  20748	   510c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+13:19:08 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17484	    480	   2784	  20748	   510c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+13:20:56 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17484	    480	   2784	  20748	   510c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+13:21:35 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17484	    480	   2784	  20748	   510c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+13:44:57 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17516	    480	   3808	  21804	   552c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+13:49:47 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17516	    480	   3808	  21804	   552c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+13:53:00 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17516	    480	   3808	  21804	   552c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+13:55:16 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17540	    480	   3808	  21828	   5544	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:00:20 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17556	    480	   3808	  21844	   5554	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:01:00 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-size   CG2028_Assign1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17556	    480	   3808	  21844	   5554	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+14:02:10 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17572	    480	   3808	  21860	   5564	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:03:24 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17572	    480	   3808	  21860	   5564	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:04:56 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17572	    480	   3808	  21860	   5564	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:06:47 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17580	    480	   3808	  21868	   556c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:06:58 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17580	    480	   3808	  21868	   556c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:08:14 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17612	    480	   3808	  21900	   558c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:09:25 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17612	    480	   3808	  21900	   558c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:12:50 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17572	    480	   3808	  21860	   5564	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:17:50 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17548	    480	   3808	  21836	   554c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:20:18 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17548	    480	   3808	  21836	   554c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:25:18 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17548	    480	   3808	  21836	   554c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:26:44 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17556	    480	   3808	  21844	   5554	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:27:54 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17580	    480	   3808	  21868	   556c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:27:58 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17580	    480	   3808	  21868	   556c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:29:57 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17548	    480	   3808	  21836	   554c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:30:10 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17548	    480	   3808	  21836	   554c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:35:19 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17548	    480	   3808	  21836	   554c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:36:43 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17604	    480	   3808	  21892	   5584	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:38:29 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17604	    480	   3808	  21892	   5584	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:39:36 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17580	    480	   3808	  21868	   556c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:40:35 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17548	    480	   3808	  21836	   554c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:50:22 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17548	    480	   3808	  21836	   554c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:51:44 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17548	    480	   3808	  21836	   554c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:57:25 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17548	    480	   9952	  27980	   6d4c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+14:59:46 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17604	    480	   9952	  28036	   6d84	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+15:00:53 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17604	    480	   9952	  28036	   6d84	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+15:02:20 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17588	    480	   9952	  28020	   6d74	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+15:03:20 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17588	    480	   9952	  28020	   6d74	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+15:03:25 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17588	    480	   9952	  28020	   6d74	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+15:04:24 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17580	    480	   9952	  28012	   6d6c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+15:05:24 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17604	    480	   9952	  28036	   6d84	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+15:06:31 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17604	    480	  34528	  52612	   cd84	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+15:45:02 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17572	    480	  34528	  52580	   cd64	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+15:51:58 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17572	    480	  34528	  52580	   cd64	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+15:52:41 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32L4 -DSTM32 -DDEBUG -DSTM32L475VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17516	    480	  34528	  52524	   cd2c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+15:54:17 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/convolve.d" -MT"Src/convolve.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/convolve.o" "../Src/convolve.s"
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17516	    480	  34528	  52524	   cd2c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
+15:54:27 **** Incremental Build of configuration Debug for project CG2028_Assign1 ****
+make -j16 all 
+arm-none-eabi-gcc -o "CG2028_Assign1.elf" @"objects.list"  -lrdimon -mcpu=cortex-m4 -T"C:\Users\maxch\OneDrive\Desktop\CG2028\workspace\CG2028_Assign1\CG2028_Assign1\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CG2028_Assign1.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CG2028_Assign1.elf
+ 
+arm-none-eabi-size   CG2028_Assign1.elf 
+arm-none-eabi-objdump -h -S  CG2028_Assign1.elf  > "CG2028_Assign1.list"
+   text	   data	    bss	    dec	    hex	filename
+  17516	    480	  34528	  52524	   cd2c	CG2028_Assign1.elf
+Finished building: default.size.stdout
+ 
+Finished building: CG2028_Assign1.list
+ 
